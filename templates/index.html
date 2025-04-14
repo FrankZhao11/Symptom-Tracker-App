@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptom Tracker App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Symptom Tracker App</h1>
+
+    <!-- Form to log new symptom -->
+    <form method="POST">
+        <label for="symptom">Symptom:</label>
+        <input type="text" id="symptom" name="symptom" required>
+
+        <label for="severity">Severity (1-10):</label>
+        <input type="number" id="severity" name="severity" min="1" max="10" required>
+
+        <button type="submit">Log Symptom</button>
+    </form>
+
+    <!-- Display all logged symptoms -->
+    <h2>Symptom History</h2>
+    <ul>
+        {% for entry in logs %}
+            <li>
+                <strong>Date:</strong> {{ entry[1] }}<br>
+                <strong>Symptom:</strong> {{ entry[2] }}<br>
+                <strong>Severity:</strong> {{ entry[3] }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
