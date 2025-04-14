@@ -3,7 +3,6 @@
 Welcome!
 This is a lightweight Flask web application to record and track daily health symptoms.
 
-Welcome!
 
 ## Features
 - **Add symptoms** with a severity rating (1–10).
