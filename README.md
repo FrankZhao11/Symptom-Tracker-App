@@ -1,8 +1,6 @@
 # Symptom Tracker App
 
-Welcome!
-This is a lightweight Flask web application to record and track daily health symptoms.
-
+Welcome! This is a lightweight Flask web application to record and track daily health symptoms.
 
 ## Features
 - **Add symptoms** with a severity rating (1–10).
